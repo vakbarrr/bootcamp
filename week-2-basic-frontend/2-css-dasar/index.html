@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Remix Ccons -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Box Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -15,60 +15,175 @@
 </head>
 
 <body>
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">
-        <img src="assets/img/logo.png" alt="">
-      </a>
+  <header class="header">
+    <nav class="nav bg-grid">
+      <div>
+        <a href="#" class="nav__logo">Portfolio</a>
+      </div>
 
+      <!-- navbar -->
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link active-link">Home</a>
+            <a href="#beranda" class="nav__logo">Beranda</a>
           </li>
           <li class="nav__item">
-            <a href="#skill" class="nav__link">Skills</a>
+            <a href="#tentang" class="nav__logo">Tentang</a>
           </li>
-           <li class="nav__item">
-            <a href="#project" class="nav__link">Project</a>
+          <li class="nav__item">
+            <a href="#skills" class="nav__logo">Skills</a>
           </li>
-           <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__logo">Porto</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__logo">Contact</a>
           </li>
         </ul>
-
-        <div class="nav__close" id="nav-close">
-          <i class="ri-close-line"></i>
-        </div>
       </div>
-
       <div class="nav__toggle" id="nav-toggle">
-        <i class="ri-function-line"></i>
+        <i class='bx bx-menu'></i>
       </div>
     </nav>
   </header>
+
   <main class="main">
+
     <!-- Home -->
-    <section class="home section" id="home">
-      <div class="home__container container grid">
-        <div class="home__data">
-            <div class="home__header">
-              <h2 class="home__title">Halo, perkenalkan aku Gian Akbar</h2>
-              <p  class="home__subtitle">Mahasiswa biasa saja, program studi Sistem Informasi</p>
-            </div>
+    <section class="home bg-grid" id="beranda">
+      <div class="home__data">
+        <h1 class="home__title">
+          Halo! <br><span>Aku Gian Akbar</span><br>
+          Back-End Web Developer
+        </h1>
+        <a href="#" class="button">Contact</a>
+      </div>
+
+      <div class="home__social">
+        <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+        <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
+        <a href="" class="home__social-icon"><i class='bx bxl-github'></i></a>
+      </div>
+
+      <div class="home__img">
+        <img src="assets/img/perfil.png" alt="">
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about section" id="tentang">
+      <h2 class="section-title">TENTANG</h2>
+      <div class="about__continer bg-grid">
+        <div class="about__img">
+          <img src="assets/img/about.jpg" alt="">
+        </div>
+
+        <div>
+          <h2 class="about__subtitle  ">
+            Gian Akbar
+          </h2>
+          <p class="about__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius inventore, id pariatur iure deserunt, iste
+            molestiae mollitia quibusdam velit quis illum illo esse dolorem vel voluptates voluptatum, nihil
+            necessitatibus animi.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- Skills -->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">SKILLS</h2>
 
-  </mai>
-  <!--  -->
-  <!-- <a href="#" class="scrollup" id="scroll-up">
-    <i class="ri-arrow-up-s-line scrollup__icon"></i>
-  </a> -->
+      <div class="skills__container bg-grid">
+        <div>
+          <h2 class="skills__subtitle">Skills</h2>
+          <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet,
+            alias architecto consectetur error eum eaque sit.</p>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-html5 skills__icon'></i>
+              <span class="skills__name">HTML5</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-css3 skills__icon'></i>
+              <span class="skills__name">CSS</span>
+            </div>
 
-  <!-- JSS -->
-  <script src="assets/js/main.js"></script>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-javascript skills__icon'></i>
+              <span class="skills__name">JAVASCRIPT</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxs-happy-beaming skills__icon'></i>
+              <span class="skills__name">PROJECT MANAGEMENT</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="assets/img/work3.jpg" alt="" class="skills__img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Porto -->
+    <section class="work section" id="work">
+      <h2 class="section-title">Work</h2>
+
+      <div class="work__container bd-grid">
+        <div class="work__img">
+          <img src="assets/img/work1.jpg" alt="">
+        </div>
+        <div class="work__img">
+          <img src="assets/img/work2.jpg" alt="">
+        </div>
+        <div class="work__img">
+          <img src="assets/img/work3.jpg" alt="">
+        </div>
+        <div class="work__img">
+          <img src="assets/img/work4.jpg" alt="">
+        </div>
+        <div class="work__img">
+          <img src="assets/img/work5.jpg" alt="">
+        </div>
+        <div class="work__img">
+          <img src="assets/img/work6.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact__container bg-grid">
+        <form action="" class="contact__form">
+          <input type="text" placeholder="Masukkan namamu" class="contact__input">
+          <input type="mail" placeholder="Masukkan emailmu" class="contact__input">
+          <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Masukkan pesanmu"></textarea>
+          <input type="button" value="Submit" class="contact__button button">
+        </form>
+      </div>
+    </section>
+  </main>
+
+   <footer class="footer">
+            <p class="footer__title">Gian</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <p>&#169; 2021</p>
+        </footer>
 </body>
 
 </html>
