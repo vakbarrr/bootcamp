@@ -206,8 +206,10 @@ img {
 
 /* Homeyy */
 .home {
-  height: calc(100vh-3rem);
+  height: calc(100vh - 3rem);
   row-gap: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 .home__data {
@@ -216,7 +218,7 @@ img {
 
 .home__title {
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
+  margin-bottom: var(--mb-2);
 }
 
 .home__title span {
@@ -232,6 +234,15 @@ img {
   right: 0;
   bottom: 0;
   width: 295px;
+}
+
+.home__scroll {
+  align-self: flex-end;
+  padding-bottom: var(--mb-2);
+}
+
+.home__scroll-link {
+  color: var(--first-color);
 }
 
 /* Buttons */
@@ -494,7 +505,7 @@ img {
     width: 380px;
   }
 
-  .footer__container{
+  .footer__container {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
   }
@@ -509,6 +520,5 @@ img {
   .home__img {
     right: 10%;
   }
-  
-}
 
+}
