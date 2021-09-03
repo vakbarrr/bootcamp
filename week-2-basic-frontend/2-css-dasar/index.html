@@ -31,14 +31,17 @@
             <a href="#tentang" class="nav__logo">Tentang</a>
           </li>
           <li class="nav__item">
+            <a href="#education" class="nav__logo">Education</a>
+          </li>
+          <li class="nav__item">
             <a href="#skills" class="nav__logo">Skills</a>
           </li>
           </li>
           <li class="nav__item">
-            <a href="#skills" class="nav__logo">Porto</a>
+            <a href="#work" class="nav__logo">Porto</a>
           </li>
           <li class="nav__item">
-            <a href="#skills" class="nav__logo">Contact</a>
+            <a href="#contact" class="nav__logo">Contact</a>
           </li>
         </ul>
       </div>
@@ -81,8 +84,22 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius inventore, id pariatur iure deserunt, iste
             molestiae mollitia quibusdam velit quis illum illo esse dolorem vel voluptates voluptatum, nihil
             necessitatibus animi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius inventore, id pariatur iure deserunt, iste
+            molestiae mollitia quibusdam velit quis illum illo esse dolorem vel voluptates voluptatum, nihil
+            necessitatibus animi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius inventore, id pariatur iure deserunt, iste
+            molestiae mollitia quibusdam velit quis illum illo esse dolorem vel voluptates voluptatum, nihil
+            necessitatibus animi.
           </p>
         </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline section" id="education">
+      <h2 class="section-title">EDUCATION</h2>
+      <div class="timeline__container bg-grid">
+
       </div>
     </section>
 
@@ -152,31 +169,64 @@
 
     <!-- contact -->
     <section class="contact section" id="contact">
-      <h2 class="section-title">CONTACT</h2>
+      <h2 class="section-title">Contact</h2>
 
       <div class="contact__container bg-grid">
+        <div class="contact__info">
+          <h3 class="contact__subtitle">EMAIL</h3>
+          <span class="contact__text">vakbarrr@gmail.com</span>
+
+          <h3 class="contact__subtitle">PHONE</h3>
+          <span class="contact__text">085850518483</span>
+
+          <h3 class="contact__subtitle">ADRESS</h3>
+          <span class="contact__text">Jakarta Barat</span>
+        </div>
+
         <form action="" class="contact__form">
-          <input type="text" placeholder="Masukkan namamu" class="contact__input">
-          <input type="mail" placeholder="Masukkan emailmu" class="contact__input">
-          <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Masukkan pesanmu"></textarea>
-          <input type="button" value="Submit" class="contact__button button">
+          <div class="contact__inputs">
+            <input type="text" placeholder="Your Name" class="contact__input">
+            <input type="mail" placeholder="Your Email" class="contact__input">
+          </div>
+
+          <textarea name="" id=""   placeholder="Your Message" cols="0" rows="10" class="contact__input"></textarea>
+
+          <input type="submit" value="Submit" class="contact__button">
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p class="footer__title">Gian</p>
-    <div class="footer__social">
-      <a href="http://github.com/vakbarrr" class="footer__icon"><i class='bx bxl-github'></i></a>
-      <a href="https://www.instagram.com/vakbarrr/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-      <a href="https://www.linkedin.com/in/vakbarrr/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-    </div>
-    <p>&#169; 2021 Gian Akbar</p>
-  </footer>
-  <script src="assets/js/main.js"></script>
+  <footer class="footer section">
+    <div class="footer__container bg-grid">
+        <div class="footer__data">
+            <h2 class="footer__title">Gian Akbar</h2>
+            <p class="footer__text">My Porto</p>
+        </div>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
+        <div class="footer__data">
+            <h2 class="footer__title">EXPLORE</h2>
+            <ul>
+                <li><a href="#Beranda" class="footer__link">Beranda</a></li>
+                <li><a href="#tentang" class="footer__link">Tentang</a></li>
+                <li><a href="#education" class="footer__link">Education</a></li>
+                <li><a href="#skills" class="footer__link">Skills</a></li>
+                <li><a href="#work" class="nav__logo">Porto</a></li>
+                <li><a href="#Contact" class="footer__link">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer__data">
+            <h2 class="footer__title">FOLLOW</h2>
+            <a href="https://www.linkedin.com/in/vakbarrr/" class="footer__social"><i class='bx bxl-linkedin' ></i></a>
+            <a href="http://github.com/vakbarrr" class="footer__social"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com/vakbarrr/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+        </div>
+
+
+    </div>
+</footer>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
