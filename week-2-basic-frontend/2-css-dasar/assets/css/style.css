@@ -206,7 +206,7 @@ img {
 
 /* Homeyy */
 .home {
-  height: calc(100vh - 3rem);
+  height: 100%;
   row-gap: 1rem;
   padding-top: 4rem;
   padding-bottom: 3rem;
@@ -278,6 +278,18 @@ img {
   border-radius: .5rem;
 }
 
+.about__text{
+  margin-bottom: var(--mb-5);
+}
+
+.about__social-icon{
+  font-size: 1.9rem;
+  color : var(--second-color)
+}
+
+.about__social-icon:hover{
+  color: var(--first-color);
+}
 /* Timeline */
 .timeline__container {
   row-gap: 2rem;
