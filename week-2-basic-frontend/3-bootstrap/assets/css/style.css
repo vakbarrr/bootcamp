@@ -1,0 +1,129 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
+
+/* variable */
+:root {
+  --header-height: 3rem;
+  --font-semi: 400;
+  /* color */
+  --first-color: #032fa7;
+  --second-color: #212121;
+  /* font */
+  --body-font: 'Quicksand', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+}
+/* baseee */
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+}
+::placeholder {
+  font-family: var(--body-font);
+}
+a {
+  text-decoration: none;
+}
+
+a::hover {
+  color: var(--first-color);
+}
+/* class */
+.section-title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
+/* Homeyy */
+.home__title {
+  font-size: var(--big-font-size);
+}
+
+.home__title span {
+  color: var(--first-color);
+}
+
+.home__title-color {
+  color: var(--first-color);
+}
+
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+}
+
+.button:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
+}
+
+/* Skills */
+.skills__container {
+  row-gap: 2rem;
+  text-align: center;
+}
+
+
+.skills__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+}
+
+.skills__icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__names {
+  display: flex;
+  align-items: center;
+}
+
+.skills__html {
+  width: 95%;
+}
+
+.skills__css {
+  width: 85%;
+}
+
+.skills__js {
+  width: 65%;
+}
+
+.skills__ux {
+  width: 85%;
+}
+
+
+
+
