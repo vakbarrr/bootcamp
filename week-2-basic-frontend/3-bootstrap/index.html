@@ -19,22 +19,25 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white mb-3">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">LOGO</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Tentang</a>
+              <a class="nav-link" href="#tentang">Tentang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -79,7 +82,7 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section class="skills id="skills">
       <h2 class="section-title">SKILLS</h2>
       <div class="row d-flex justify-content-md-center mt-5">
         <div class="col-md-10 text-center mb-5">
@@ -137,9 +140,33 @@
       </div>
     </section>
 
-    <!-- <section class="contact">
+    <section class="contact mt-5" id="contact">
       <h2 class="section-title">CONTACT</h2>
-    </section> -->
+      <div class="row mt-5">
+        <div class="contact__info mb-2">
+          <h3 class="contact__subtitle">EMAIL</h3>
+          <span class="contact__text">vakbarrr@gmail.com</span>
+
+          <h3 class="contact__subtitle">PHONE</h3>
+          <span class="contact__text">085850518483</span>
+
+          <h3 class="contact__subtitle">ADRESS</h3>
+          <span class="contact__text">Jakarta Barat</span>
+        </div>
+
+        <form action="" class="contact__form mt-5">
+          <div class="contact__inputs">
+            <input type="text" placeholder="Your Name" class="contact__input">
+            <input type="mail" placeholder="Your Email" class="contact__input">
+          </div>
+
+          <textarea name="" id="" placeholder="Your Message" cols="0" rows="10" class="contact__input"></textarea>
+
+          <input type="submit" value="Submit" class="contact__button">
+        </form>
+      </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer section mt-5">
@@ -152,7 +179,7 @@
       <div class="footer__data">
         <h2 class="footer__title">EXPLORE</h2>
         <ul>
-          <li><a href="#Beranda" class="footer__link">Beranda</a></li>
+          <li><a href="#Beranda" class="footer__link text-decoration-none">Beranda</a></li>
           <li><a href="#tentang" class="footer__link">Tentang</a></li>
           <li><a href="#skills" class="footer__link">Skills</a></li>
           <li><a href="#work" class="footer__link">Porto</a></li>
