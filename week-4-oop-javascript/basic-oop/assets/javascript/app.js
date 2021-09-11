@@ -79,3 +79,5 @@ table.render(app)
 const table2 = document.getElementById("table2")
 table.render(table2)
 
+const table3 = document.getElementById("table3")
+table.render(table3)
