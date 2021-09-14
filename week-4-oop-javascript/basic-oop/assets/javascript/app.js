@@ -42,7 +42,7 @@ class Table {
 
 function searchDatatable() {
   
-  var input, filter, table, tr, td, result;
+  let input, filter, table, tr, td, result;
   input = document.getElementById("search");
   filter = input.value.toUpperCase();
   
