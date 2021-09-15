@@ -21,7 +21,36 @@
     <div id="table"></div>
   </div>
 
+  <div class="container">
+    <h1 class="text-dark mt-4">Build table using javascript + search</h1>
+    <input class="form-control mt-4 mb-4 me-auto" onkeyup="searchDatatable()" type="text" id="search"
+      placeholder="Search by name">
+    <div id="table2"></div>
+  </div>
   <script src="src/javascript/app.js" type="module"></script>
+  <script>
+    function searchDatatable() {
+
+      let input, filter, table, tr, td, result;
+      input = document.getElementById("search");
+      filter = input.value.toUpperCase();
+
+      table = document.getElementById("table2");
+      tr = table.getElementsByTagName("tr");
+
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          result = td.textContent || td.innerText;
+          if (result.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>
