@@ -6,8 +6,8 @@ class Table {
   createTableHeader(data) {
     let tagOpen = "<thead><tr>"
     let tagCloses = "</tr></thead>"
-    data.forEach((d) => {
-      tagOpen += `<th>${d}</th>`
+    data.forEach((data) => {
+      tagOpen += `<th>${data}</th>`
     })
 
     return tagOpen + tagCloses
