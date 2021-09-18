@@ -1,13 +1,15 @@
+
 axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=feaf2358982f4325b903d09fb7a95e7a")
     .then(function (response) {
         response.data.articles.map((data) => {
             let newsdata = data
+            // console.log(newsdata)
             let row = `
             <div class="col">
                 <div class="card m-2">
                     <img clas="card-img" width="100%" height="100%" src="${data.urlToImage}" >
                     <div class="card-body">
-                    <h4 class="card-title">${data.author}</h4>
+                    <h4 class="card-title">${data.title}</h4>
                     <p class="card-text">${data.description}</p>
                     <a href="${data.url}" class="btn btn-primary">Read more</a>
                     </div>
@@ -15,6 +17,7 @@ axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=feaf2358982f43
             </div>
             `
             card.innerHTML += row
+            newsdata
         })
     })
     .catch(function (error) {
@@ -33,8 +36,8 @@ axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=feaf2358982f43
       newsdata
         .filter((item) => {
           return (
-            item.country.toLowerCase().includes(search_term) ||
-            item.name.toLowerCase().includes(search_term)
+            item.title.toLowerCase().includes(search_term) ||
+            item.description.toLowerCase().includes(search_term)
           );
         })
         .forEach((e) => {
@@ -43,7 +46,7 @@ axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=feaf2358982f43
                 <div class="card m-2">
                     <img clas="card-img" width="100%" height="100%" src="${e.urlToImage}" >
                     <div class="card-body">
-                    <h4 class="card-title">${e.author}</h4>
+                    <h4 class="card-title">${e.title}</h4>
                     <p class="card-text">${e.description}</p>
                     <a href="${e.url}" class="btn btn-primary">Read more</a>
                     </div>
