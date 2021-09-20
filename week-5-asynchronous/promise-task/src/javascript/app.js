@@ -29,7 +29,6 @@ axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=feaf2358982f43
 
 
 // test using fetch
-
 const search = document.getElementById("search")
 search.addEventListener("input", function (newsdata) {
     const title = newsdata.target.value
