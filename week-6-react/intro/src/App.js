@@ -1,12 +1,12 @@
 import React from 'react';
-import Beranda from './Components/Class/Beranda';
-import Home from './Components/Fungsional/Home';
+import Parent from './Components/Class/Parent';
+
 
 
 function App() {
   return (
    <div className="App">
-     <Home/>
+     <Parent/>
    </div>
   );
 }
