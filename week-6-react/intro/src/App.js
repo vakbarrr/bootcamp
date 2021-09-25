@@ -1,5 +1,5 @@
 import React from 'react';
-import Toggle from './Components/Class/HandleClick';
+import GetApi from './Api/GetApi';
 // import Parent from './Components/Class/Parent';
 
 
@@ -7,7 +7,7 @@ import Toggle from './Components/Class/HandleClick';
 function App() {
   return (
    <div className="App">
-     <Toggle/>
+     <GetApi/>
    </div>
   );
 }
