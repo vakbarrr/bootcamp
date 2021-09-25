@@ -1,12 +1,13 @@
 import React from 'react';
-import Parent from './Components/Class/Parent';
+import BootstrapComponents from './Components/Class/BootstrapComponents';
+// import Parent from './Components/Class/Parent';
 
 
 
 function App() {
   return (
    <div className="App">
-     <Parent/>
+     <BootstrapComponents/>
    </div>
   );
 }

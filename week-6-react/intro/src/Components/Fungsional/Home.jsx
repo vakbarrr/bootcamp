@@ -1,6 +1,5 @@
 import React from 'react';
 import Product from '../Class/Product';
-import Blog from './Blog';
 
 const Home = () => {
 return <div>
