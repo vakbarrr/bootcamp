@@ -1,5 +1,5 @@
 import React from 'react';
-import BootstrapComponents from './Components/Class/BootstrapComponents';
+import Toggle from './Components/Class/HandleClick';
 // import Parent from './Components/Class/Parent';
 
 
@@ -7,7 +7,7 @@ import BootstrapComponents from './Components/Class/BootstrapComponents';
 function App() {
   return (
    <div className="App">
-     <BootstrapComponents/>
+     <Toggle/>
    </div>
   );
 }
